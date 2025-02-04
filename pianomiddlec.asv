@@ -13,7 +13,7 @@ ylabel('Amplitude');
 xlabel('Time Sec');
 
 info1 = audioinfo("piano_middle_C.wav");
-audioinfo(Filename);
+audioinfo(Filename)
 
 t1 = 0.5;
 t2 = 1;
@@ -22,5 +22,3 @@ t1samples = t1*Fs;
 t2samples = t2*Fs;
 
 partSig = Sig(t1samples:t2samples);
-partTime = Time(t1samples:t2samples);
-plot(partTime ,partSig);
